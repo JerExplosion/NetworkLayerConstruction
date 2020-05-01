@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8F5328B5240C054B00013A94 /* BasicImageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5328B4240C054B00013A94 /* BasicImageConfiguration.swift */; };
+		8F6D4330245C8C7E002C5A80 /* ProtoTViCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D432F245C8C7E002C5A80 /* ProtoTViCell.swift */; };
 		8FA6340324082292005781E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6340224082292005781E6 /* AppDelegate.swift */; };
 		8FA6340524082292005781E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6340424082292005781E6 /* SceneDelegate.swift */; };
-		8FA6340724082292005781E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6340624082292005781E6 /* ViewController.swift */; };
+		8FA6340724082292005781E6 /* VCcvVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6340624082292005781E6 /* VCcvVC.swift */; };
 		8FA6340A24082292005781E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA6340824082292005781E6 /* Main.storyboard */; };
 		8FA6340C24082297005781E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA6340B24082297005781E6 /* Assets.xcassets */; };
 		8FA6340F24082297005781E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA6340D24082297005781E6 /* LaunchScreen.storyboard */; };
@@ -37,10 +38,11 @@
 
 /* Begin PBXFileReference section */
 		8F5328B4240C054B00013A94 /* BasicImageConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicImageConfiguration.swift; sourceTree = "<group>"; };
+		8F6D432F245C8C7E002C5A80 /* ProtoTViCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoTViCell.swift; sourceTree = "<group>"; };
 		8FA633FF24082292005781E6 /* NetworkLayerConstruction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerConstruction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA6340224082292005781E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA6340424082292005781E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FA6340624082292005781E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FA6340624082292005781E6 /* VCcvVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCcvVC.swift; sourceTree = "<group>"; };
 		8FA6340924082292005781E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FA6340B24082297005781E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA6340E24082297005781E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,9 +57,9 @@
 		8FA63431240857A7005781E6 /* ImageTransAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransAction.swift; sourceTree = "<group>"; };
 		8FA63433240857E4005781E6 /* APITransAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITransAction.swift; sourceTree = "<group>"; };
 		8FCF115224087D51008B2BD1 /* RegularNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularNetworkManager.swift; sourceTree = "<group>"; };
-		8FCF115824096489008B2BD1 /* NetworkTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkTransaction.h; sourceTree = "<group>"; };
+		8FCF115824096489008B2BD1 /* NetworkTransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NetworkTransaction.h; path = ObjectiveD/NetworkTransaction.h; sourceTree = "<group>"; };
 		8FCF115A240965F7008B2BD1 /* BasicGetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGetConfiguration.swift; sourceTree = "<group>"; };
-		8FCF115C24098FE6008B2BD1 /* NetworkLayerConstruction-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetworkLayerConstruction-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FCF115C24098FE6008B2BD1 /* NetworkLayerConstruction-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NetworkLayerConstruction-Bridging-Header.h"; path = "ObjectiveD/NetworkLayerConstruction-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F6D4331245C90E1002C5A80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F6D432F245C8C7E002C5A80 /* ProtoTViCell.swift */,
+				8FA6340624082292005781E6 /* VCcvVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8FA633F624082292005781E6 = {
 			isa = PBXGroup;
 			children = (
@@ -106,13 +117,13 @@
 				8FCF115924096577008B2BD1 /* ServiceConfigurationExamples */,
 				8FCF115624096406008B2BD1 /* Utility */,
 				8FCF115124087CF7008B2BD1 /* TransActions */,
-				8FA6340624082292005781E6 /* ViewController.swift */,
+				8F6D4331245C90E1002C5A80 /* Views */,
 				8FA6340824082292005781E6 /* Main.storyboard */,
 				8FA6340B24082297005781E6 /* Assets.xcassets */,
 				8FA6340D24082297005781E6 /* LaunchScreen.storyboard */,
-				8FCF115824096489008B2BD1 /* NetworkTransaction.h */,
 				8FA6341024082297005781E6 /* Info.plist */,
 				8FCF115C24098FE6008B2BD1 /* NetworkLayerConstruction-Bridging-Header.h */,
+				8FCF115824096489008B2BD1 /* NetworkTransaction.h */,
 			);
 			path = NetworkLayerConstruction;
 			sourceTree = "<group>";
@@ -280,7 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FA6340724082292005781E6 /* ViewController.swift in Sources */,
+				8FA6340724082292005781E6 /* VCcvVC.swift in Sources */,
+				8F6D4330245C8C7E002C5A80 /* ProtoTViCell.swift in Sources */,
 				8FCF115B240965F7008B2BD1 /* BasicGetConfiguration.swift in Sources */,
 				8FCF115324087D51008B2BD1 /* RegularNetworkManager.swift in Sources */,
 				8FA6340324082292005781E6 /* AppDelegate.swift in Sources */,
@@ -460,7 +472,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JerryRen.NetworkLayerConstruction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NetworkLayerConstruction/NetworkLayerConstruction-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +491,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JerryRen.NetworkLayerConstruction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NetworkLayerConstruction/NetworkLayerConstruction-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
