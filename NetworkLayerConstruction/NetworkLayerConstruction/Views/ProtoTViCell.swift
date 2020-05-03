@@ -67,7 +67,9 @@ extension ProtoTable: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cello = protoTableV.dequeueReusableCell(withIdentifier: "cello", for: indexPath) as! ProtoTViCell
+        guard let cello = protoTableV.dequeueReusableCell(withIdentifier: "cello", for: indexPath) as? ProtoTViCell else {
+            fatalError("cell-guards fatality")   
+        }
         
         cello.protoCelloRabel.text = colorEmptinessArray[indexPath.row]
         cello.protoCelloImage.image = UIImage(named: imageEmptinessArray[indexPath.row])
