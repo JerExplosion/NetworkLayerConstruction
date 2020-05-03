@@ -6,12 +6,29 @@
 //  Copyright © 2020 Jerry Ren. All rights reserved.
 //
 
+import SwiftUI
 import UIKit
 
 
+protocol ProtoCellProtocol {
+    func clickable(index: Int)
+}
 
 class ProtoTViCell: UITableViewCell {
-
+    
+    var cellDelegate: ProtoCellProtocol?
+    var index: IndexPath?
+    
+    @IBAction func protoCelloAction(_ sender: UIButton) {
+        cellDelegate?.clickable(index: (index?.row ?? 0))
+    }
+      
+    
+    
+//    @IBAction func protoCelloButton(_ sender: Any) {
+//        cellDelegate?.clickable(index: (index?.row)!)
+//    }
+    
     @IBOutlet weak var protoCelloImage: UIImageView!
     
     @IBOutlet weak var protoCelloRabel: UILabel!
@@ -20,6 +37,15 @@ class ProtoTViCell: UITableViewCell {
 
 class ProtoTable: UIViewController {
     @IBOutlet weak var protoTableV: UITableView!
+    
+    @IBSegueAction func swiftinessAction(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: SwiftinessView())
+    }
+    
+     
+    
+    
+    
     
     fileprivate var colorEmptinessArray: [String] = []
     private var imageEmptinessArray: [String] = []
@@ -46,6 +72,9 @@ extension ProtoTable: UITableViewDataSource, UITableViewDelegate {
         cello.protoCelloRabel.text = colorEmptinessArray[indexPath.row]
         cello.protoCelloImage.image = UIImage(named: imageEmptinessArray[indexPath.row])
         
+        cello.cellDelegate = self
+        cello.index = indexPath
+        
         return cello
     }
     
@@ -56,6 +85,16 @@ extension ProtoTable: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 93
     }
+}
+
+extension ProtoTable: ProtoCellProtocol {
+    func clickable(index: Int) {
+        print("clickable called")
+    }
+    
+    
+    
+    
 }
 
 

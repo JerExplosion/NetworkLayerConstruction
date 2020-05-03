@@ -2,20 +2,35 @@
 //  ViewController.swift
 //  NetworkLayerConstruction
 //
-//  Created by Jerry Ren on 2/27/20.
+//  Created by Jerry Ren on 5/2/20.
 //  Copyright © 2020 Jerry Ren. All rights reserved.
 //
 
 import UIKit
+import SwiftUI
 
-class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() } }
-
-
-struct Y: Codable {
-    
+struct SwiftinessView: View {
+    var body: some View {
+        Text("SwiftUI death-valley")
+    }
 }
 
+struct SwiftinessPreview: PreviewProvider {
+    static var previews: some View {
+        SwiftinessView()
+    }
+}
+
+struct SwiftyContentView: View {
+    var body: some View {
+        ZStack {
+            Color.pink
+        }
+    }
+}
+
+  
 
 
-
+  
 
