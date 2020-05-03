@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F3F5626245F6865005FC4B1 /* VoyagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F5625245F6865005FC4B1 /* VoyagerVC.swift */; };
+		8F3F5628245F690C005FC4B1 /* VoyagerTviCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F5627245F690C005FC4B1 /* VoyagerTviCell.swift */; };
 		8F5328B5240C054B00013A94 /* BasicImageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5328B4240C054B00013A94 /* BasicImageConfiguration.swift */; };
 		8F6D4330245C8C7E002C5A80 /* ProtoTViCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D432F245C8C7E002C5A80 /* ProtoTViCell.swift */; };
 		8FA6340324082292005781E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6340224082292005781E6 /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F3F5625245F6865005FC4B1 /* VoyagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerVC.swift; sourceTree = "<group>"; };
+		8F3F5627245F690C005FC4B1 /* VoyagerTviCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyagerTviCell.swift; sourceTree = "<group>"; };
 		8F5328B4240C054B00013A94 /* BasicImageConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicImageConfiguration.swift; sourceTree = "<group>"; };
 		8F6D432F245C8C7E002C5A80 /* ProtoTViCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoTViCell.swift; sourceTree = "<group>"; };
 		8FA633FF24082292005781E6 /* NetworkLayerConstruction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerConstruction.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,8 @@
 			children = (
 				8F6D432F245C8C7E002C5A80 /* ProtoTViCell.swift */,
 				8FA6340624082292005781E6 /* VCcvVC.swift */,
+				8F3F5627245F690C005FC4B1 /* VoyagerTviCell.swift */,
+				8F3F5625245F6865005FC4B1 /* VoyagerVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,8 +301,10 @@
 				8F6D4330245C8C7E002C5A80 /* ProtoTViCell.swift in Sources */,
 				8FCF115B240965F7008B2BD1 /* BasicGetConfiguration.swift in Sources */,
 				8FCF115324087D51008B2BD1 /* RegularNetworkManager.swift in Sources */,
+				8F3F5628245F690C005FC4B1 /* VoyagerTviCell.swift in Sources */,
 				8FA6340324082292005781E6 /* AppDelegate.swift in Sources */,
 				8FA63432240857A7005781E6 /* ImageTransAction.swift in Sources */,
+				8F3F5626245F6865005FC4B1 /* VoyagerVC.swift in Sources */,
 				8F5328B5240C054B00013A94 /* BasicImageConfiguration.swift in Sources */,
 				8FA63425240822DA005781E6 /* HTTPEnums.swift in Sources */,
 				8FA6342D24084F8A005781E6 /* ImageNetworkManager.swift in Sources */,
